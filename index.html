@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Boostrap styles  -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+  <title>Sistema de Inscripcion</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Sistema de Inscripcion</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+        <!-- Formulario de Ingreso de datos basicos -->
+  <div class="container my-3">
+    <div class="row">
+          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 well">
+           
+           <form class="form-control">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Nombre" >
+              </div>
+              <div class="mb-3">
+                <label for="provincia" class="form-label">Provincia:</label>
+                <input type="text" class="form-control" id="provincia" placeholder="provincia" >
+              </div>
+              <div class="mb-3">
+                <label for="ciudad" class="form-label">Ciudad:</label>
+                <input type="text" class="form-control" id="ciudad" placeholder="">
+            </div>
+            <div class="mb-3">
+              <label for="sector" class="form-label">Sector:</label>
+              <input type="text" class="form-control" id="sector">
+          </div>
+          <div class="mb-3">
+            <label for="calle" class="form-label">Calle:</label>
+            <input type="text" class="form-control" id="calle">
+        </div>      
+        <div class="mb-3">
+            <label for="carrera" class="form-label">Carrera:</label>
+            <select class="form-select" id="carrera">
+                <option value="software">Software</option>
+                <option value="multimedia">Multimedia</option>
+                <option value="redes">Redes</option>
+              </select>
+        </div>    
+        <button type="button" id="guardar" class="btn btn-success guardar">Guardar</button>
+     
+      </form>
+      </div>
+  
+               
+         
+      
+  </div>
+      </div>
+    
+      
+      <!-- Formulario de estudiante  -->
+      <div class="container2">
+ <div class="card" style="width: 22rem;">      
+              <!-- <div class="card-body">
+        
+          <div class="accordion flex" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" value="Photoshop">
+                Adobe Photoshop
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="Photoshop" id="inlineRadio" value="Lun 8-12">
+                  <label class="form-check-label" for="inlineRadio">Lun 8-12</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="Photoshop" id="inlineRadio" value="Mar 2-6">
+                  <label class="form-check-label" for="inlineRadio">Mar 2-6</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="Photoshop" id="inlineRadio" value="Vier 8-12">
+                  <label class="form-check-label" for="inlineRadio">Vier 8-12</label>
+                </div>
+              </div>
+            </div>
+          </div>
+                     
+          <div class="accordion" id="accordionExample2">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo" value="Marketing">
+                  Marketing
+                </button>
+              </h2>
+              <div id="collapsetwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample2">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="Marketing" id="inlineRadio" value="Lun 8-12">
+                  <label class="form-check-label" for="inlineRadio">Lun 8-12</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="Marketing" id="inlineRadio" value="Mar 2-6">
+                  <label class="form-check-label" for="inlineRadio">Mar 2-6</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="Marketing" id="inlineRadio" value="Vier 8-12">
+                  <label class="form-check-label" for="inlineRadio">Vier 8-12</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        
+          <div class="accordion" id="accordionExample3">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="true" aria-controls="collapsethree" value="Interactividad">
+                  Interactividad
+                </button>
+              </h2>
+              <div id="collapsethree" class="accordion-collapse collapse show" data-bs-parent="#accordionExample3">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="Interactividad" id="inlineRadio" value="Lun 8-12">
+                  <label class="form-check-label" for="inlineRadio">Lun 8-12</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="Interactividad" id="inlineRadio" value="Mar 2-6">
+                  <label class="form-check-label" for="inlineRadio">Mar 2-6</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="Interactividad" id="inlineRadio" value="Vier 8-12">
+                  <label class="form-check-label" for="inlineRadio">Vier 8-12</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+           <div class="accordion" id="accordionExample4">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="true" aria-controls="collapsefour" value="Fotografía">
+                  Fotografía
+                </button>
+              </h2>
+              <div id="collapsefour" class="accordion-collapse collapse show" data-bs-parent="#accordionExample4">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="Fotografía" id="inlineRadio" value="Lun 8-12">
+                  <label class="form-check-label" for="inlineRadio">Lun 8-12</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="Fotografía" id="inlineRadio" value="Mar 2-6">
+                  <label class="form-check-label" for="inlineRadio">Mar 2-6</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="Fotografía" id="inlineRadio" value="Vier 8-12">
+                  <label class="form-check-label" for="inlineRadio">Vier 8-12</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+           <div class="accordion" id="accordionExample5">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="true" aria-controls="collapsefive" value="Audio Digital">
+                  Audio Digital
+                </button>
+              </h2>
+              <div id="collapsefive" class="accordion-collapse collapse show" data-bs-parent="#accordionExample5">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="Audio Digital" id="inlineRadio" value="Lun 8-12">
+                  <label class="form-check-label" for="inlineRadio">Lun 8-12</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="Audio Digital" id="inlineRadio" value="Mar 2-6">
+                  <label class="form-check-label" for="inlineRadio">Mar 2-6</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="Audio Digital" id="inlineRadio" value="Vier 8-12">
+                  <label class="form-check-label" for="inlineRadio">Vier 8-12</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button type="button" id="Aceptar" class="btn btn-success" onclick="ConfirmationForm()">Aceptar</button>
+ <button type="button" id="back" class="btn btn-warning" onclick="backToFirst()">Back</button>
+        </div>-->
+      </div>  
+    </div>
+
+    <div class="container3 d-flex justify-content-center">
+      
+<!--        
+      <div class="row container">
+      <div class="col-lg-8 grid-margin stretch-card">
+        <div class="card">
+          <div class="card-header bg-success">
+            <h2>Confirmacion:</h2>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Datos Ingresados</h4>
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Nombre</th>
+                    <th>Provincia</th>
+                    <th>Ciudad</th>
+                    <th>Sector</th>
+                    <th>Calle</th>
+                    <th>Carrera</th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h6>Materias Seleccionadas:</h6>
+          </div>
+          <div class="card-body">
+            <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
+             
+          <table class="table table-striped table-dark">
+                  <thead>
+                      <tr>
+                          <th>#</th>
+                          <th>Asignatura</th>
+                          <th>Lunes</th>
+                          <th>Martes</th>
+                          <th>Miercoles</th>
+                          <th>Jueves</th>
+                          <th>Viernes</th>
+
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>1</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                      </tr>
+                      <tr>
+                          <td>2</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                      </tr>
+                      <tr>
+                          <td>3</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                      </tr>
+                      <tr>
+                          <td>4</td>
+                          <td></td>
+                          <td></td>
+                           <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                  </tbody>
+              </table>
+              <button type="button" id="Completar" class="btn btn-success">Completar</button>
+    <button type="button" id="back" class="btn btn-warning" onclick="backToSecond()">Back</button>
+        </div>
+          </div>
+        </div>
+
+      </div>
+      </div>
+ -->
+
+      
+        <!-- Horario Seleccionado  -->
+ 
+
+
+    </div>
+
+
+
+    
+        
+     
+
+
+<!-- including boostrap  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>
